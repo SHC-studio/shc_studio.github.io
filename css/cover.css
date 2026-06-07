@@ -18,6 +18,9 @@
   font-family: 'DancingScript-b';
   src: url('../font/MapoGoldenPier.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'Aritta-m';
+  src: url('../font/아리따-돋움(TTF)-Medium.ttf') format('truetype');
 
 /* Mobile and PC*/
 
@@ -549,7 +552,7 @@ header {
   background-color: #f9f9f9;
 }
 .works-list{
-    font-family: NanumMyeongjo-b;
+    font-family: Aritta-m;
     font-size: 1.2rem;
     line-height: 2em;
     color: #333;
