@@ -18,7 +18,23 @@
   font-family: 'DancingScript-b';
   src: url('../font/MapoGoldenPier.ttf') format('truetype');
 }
+/* Mobile and PC*/
 
+.pc-only {
+    display: inline;
+}
+.mobile-only {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .pc-only {
+        display: none;
+    }
+    .mobile-only {
+        display: inline;
+    }
+}
 /* Links */
 a,
 a:focus,
@@ -104,7 +120,10 @@ body {
 }
 
 .cover-container {
-  max-width: 42em;
+   max-width: 32em;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .cover-container-2 {
@@ -183,8 +202,7 @@ header {
 }
 
 .section1-main {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding: 0 8px;
     line-height: 1.8;
     background-color: #fefefe;
     font-family: NanumMyeongjo-r;
