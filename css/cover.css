@@ -179,7 +179,7 @@ header {
   margin-top: 1em;
   color: #333;
   text-shadow: none;
-  font-size: 0.65rem;
+  font-size: 1rem;
 }
 
 .section1-main {
@@ -189,7 +189,7 @@ header {
     background-color: #fefefe;
     font-family: NanumMyeongjo-r;
     line-height: 2em;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
 }
 
 .section1-sub {
