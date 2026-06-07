@@ -135,9 +135,9 @@ body {
 }
 
 /* PC */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
     .cover-container {
-        max-width: 52em;
+        max-width: 60em;
     }
 }
 
