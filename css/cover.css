@@ -108,13 +108,8 @@ header {
 }
 
 /* 소개 */
-.section1-title {
-  margin-top: 1em;
-  color: #333;
-  text-shadow: none;
-}
 
-.section1-main {
+.intro {
   padding: 0 8px;
   background-color: #fefefe;
   font-family: NanumMyeongjo-r;
