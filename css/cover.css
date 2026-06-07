@@ -119,11 +119,26 @@ body {
   color: #fff;
 }
 
+/* 모바일 기본 */
 .cover-container {
-   max-width: 32em;
+    max-width: 32em;
     margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
+}
+
+/* 태블릿 이상 */
+@media screen and (min-width: 768px) {
+    .cover-container {
+        max-width: 42em;
+    }
+}
+
+/* PC */
+@media screen and (min-width: 1200px) {
+    .cover-container {
+        max-width: 52em;
+    }
 }
 
 .cover-container-2 {
