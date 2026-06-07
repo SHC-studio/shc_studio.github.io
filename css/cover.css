@@ -83,17 +83,12 @@ header {
 }
 
 /* 연락처 */
-.section7-title {
-  margin-top: 1em;
-  color: #333;
-  text-shadow: none;
-}
-
-.section7-main {
-  font-family: NanumMyeongjo-b;
-  line-height: 1.4em;
-  font-size: 1.4rem;
-}
+.section-title{
+    margin-top: 1em;
+    color: #333;
+    font-family: NanumMyeongjo-b;
+    font-size: 1.4rem;
+    line-height: 1.4;
 
 .contact-icons {
   display: flex;
