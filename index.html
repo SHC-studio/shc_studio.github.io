@@ -38,12 +38,10 @@ crossorigin="anonymous">
     <header>
     <img src="img/logo.jpg" class="main-image" alt="사해충 스튜디오">
 </header>
-
     <main>
 
 <!-- 연락처 -->
             <p class="wow fadeInUp section7-title section7-main">CONTACTS</p>
-            <br/>
 			<div class="wow fadeInUp">
       			<div class="contact-icons">
     				<a href="tel:01038967713">
@@ -82,6 +80,8 @@ crossorigin="anonymous">
 
     </p>
     <br/>
+	
+<!-- 작품목록 -->
 </div>
         <hr class="cover-container"/>
         <br/>
@@ -93,7 +93,14 @@ crossorigin="anonymous">
        2025.7 배다리 여공 이야기<br>
        2026.1 달구리 국밥집
         </p>
-    
+				
+<!-- 작품 영상 링크 -->
+  <div class="works-gallery" id="works-gallery"></div>
+
+
+
+				
+<!-- 하단 -->
             <br/><br/>
         <footer class="pt-5 text-muted text-center text-small section8">
             <p class="mb-1">© sahaechoong </p>
@@ -102,8 +109,33 @@ crossorigin="anonymous">
         </footer>
     </main>
 </div>
+
+<!-- 자바스크립트 -->
+	
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+<!-- 영상 링크 관리 -->
+	
+	<script>
+const works = [
+    "L_NGWVQeWpU",
+    "nJ8HFMsHM6o",
+    "tLEQzvvPNk4"
+];
+
+const gallery = document.getElementById("works-gallery");
+
+works.forEach(id => {
+    gallery.innerHTML += `
+        <a class="work-card"
+           href="https://youtu.be/${id}"
+           target="_blank">
+            <img src="https://i.ytimg.com/vi/${id}/hqdefault.jpg">
+        </a>
+    `;
+});
+</script>
 </body>
 </html>
